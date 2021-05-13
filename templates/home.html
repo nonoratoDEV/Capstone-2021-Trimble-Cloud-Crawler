@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Trimble Crawler</h1>
+    <ul>
+        <li>Current Path: {{ paths['current'] }}</li>
+        <li>Head Path: {{ paths['head'] }}</li>
+        <li>Parent Path: {{ paths['parent'] }}</li>
+    </ul>
+    <div>
+        <form action= {{ links['dirs'] }}>
+            <input type="submit" value="Directories" />
+        </form>
+        <form action={{ links['files'] }}>
+            <input type="submit" value="Files" />
+        </form>
+        <form action={{ links['fileset'] }}>
+            <input type="submit" value="File Set" />
+        </form>
+        <form action={{ links['cd'] }}>
+            <input type="submit" value="cd" />
+        </form>
+        <form action={{ links['download'] }}>
+            <input type="submit" value="download" />
+        </form>
+    </div>
+</body>
+</html>
